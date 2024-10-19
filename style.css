@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.form-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 48%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.gender-group {
+    margin-bottom: 20px;
+}
+
+.gender-group label {
+    font-size: 14px;
+}
+
+.gender-group div {
+    margin-top: 5px;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.submit-btn {
+    background: linear-gradient(-45deg, #33ccff, #ff99cc);
+    color: white;
+    cursor: pointer;
+}
+
+button.cancel-btn {
+    background: linear-gradient(-45deg, #FFA63D, #FF3D77);
+    color: white;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .input-field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
